@@ -1,7 +1,7 @@
 # Etapa 1: Compilar el proyecto
 FROM maven:3.8.5-openjdk-17-slim AS build
 WORKDIR /app
-COPY ./ ./
+COPY . .
 RUN mvn clean package
 
 # Etapa 2: Crear la imagen final
